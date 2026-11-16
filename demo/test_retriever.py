@@ -31,7 +31,7 @@ def parse_args():
         default='checkpoint/Retrieve/vgg/global/epoch_100.pth',
         help='the checkpoint file to resume from')
     parser.add_argument(
-        '--use_cuda', type=bool, default=True, help='use gpu or not')
+        '--use_cuda', action='store_true', help='use gpu or not')
     args = parser.parse_args()
     return args
 

@@ -28,7 +28,7 @@ def parse_args():
         help='test config file path',
         default='configs/attribute_predict/global_predictor_vgg_attr.py')
     parser.add_argument(
-        '--use_cuda', type=bool, default=True, help='use gpu or not')
+        '--use_cuda', action='store_true', help='use gpu or not')
     args = parser.parse_args()
     return args
 

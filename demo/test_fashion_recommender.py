@@ -31,7 +31,7 @@ def parse_args():
         help='input image path',
         default='demo/imgs/fashion_compatibility/set2')
     parser.add_argument(
-        '--use_cuda', type=bool, default=True, help='use gpu or not')
+        '--use_cuda', action='store_true', help='use gpu or not')
     args = parser.parse_args()
     return args
 
